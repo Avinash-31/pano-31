@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>header}}
+    <link rel="stylesheet" href="css/events.css">
+
+</head>
+
+<body>
+    {{>navbar}}
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <img id="modal-image" class="modal-image" src="" alt="Full-Screen Image">
+            <button id="close-modal" class="btn btn-danger close-modal" onclick="closeModal()">&times;</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="timeline">
+            <!-- <div class="timeline-month">
+            </div> -->
+            <div class="timeline-section">
+                <div class="timeline-date">
+                    Day-1
+                </div>
+                <div class="events-container">
+                    <div class="events-card" style="--clr: #009688">
+                        <div class="img-box">
+                            <img onclick="openModal('img/DSC07750.webp')" src="img/DSC07750.webp">
+                        </div>
+                        <div class="events-content">
+                            <h2>EventName</h2>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Architecto, hic? Magnam eum error saepe doloribus corrupti
+                                repellat quisquam alias doloremque!
+                            </p>
+                            <a href="">Link</a>
+                        </div>
+                    </div>
+                    <div class="events-card" style="--clr: #009688">
+                        <div class="img-box">
+                            <img onclick="openModal('img/DSC07750.webp')" src="img/DSC07750.webp">
+                        </div>
+                        <div class="events-content">
+                            <h2>EventName</h2>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Architecto, hic? Magnam eum error saepe doloribus corrupti
+                                repellat quisquam alias doloremque!
+                            </p>
+                            <a href="">Link</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="timeline-section">
+                <div class="timeline-date">
+                    Day-2
+                </div>
+                <div class="events-container">
+                    <div class="events-card" style="--clr: #009688">
+                        <div class="img-box">
+                            <img onclick="openModal('img/DSC07750.webp')" src="img/DSC07750.webp">
+                        </div>
+                        <div class="events-content">
+                            <h2>EventName</h2>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Architecto, hic? Magnam eum error saepe doloribus corrupti
+                                repellat quisquam alias doloremque!
+                            </p>
+                            <a href="">Link</a>
+                        </div>
+                    </div>
+                    <div class="events-card" style="--clr: #009688">
+                        <div class="img-box">
+                            <img onclick="openModal('img/DSC07750.webp')" src="img/DSC07750.webp">
+                        </div>
+                        <div class="events-content">
+                            <h2>EventName</h2>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Architecto, hic? Magnam eum error saepe doloribus corrupti
+                                repellat quisquam alias doloremque!
+                            </p>
+                            <a href="">Link</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="timeline-section">
+                <div class="timeline-date">
+                    Day-3
+                </div>
+                <div class="events-container">
+                    <div class="events-card" style="--clr: #009688">
+                        <div class="img-box">
+                            <img onclick="openModal('img/DSC07750.webp')" src="img/DSC07750.webp">
+                        </div>
+                        <div class="events-content">
+                            <h2>EventName</h2>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Architecto, hic? Magnam eum error saepe doloribus corrupti
+                                repellat quisquam alias doloremque!
+                            </p>
+                            <a href="">Link</a>
+                        </div>
+                    </div>
+                    <div class="events-card" style="--clr: #009688">
+                        <div class="img-box">
+                            <img onclick="openModal('img/DSC07750.webp')" src="img/DSC07750.webp">
+                        </div>
+                        <div class="events-content">
+                            <h2>EventName</h2>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Architecto, hic? Magnam eum error saepe doloribus corrupti
+                                repellat quisquam alias doloremque!
+                            </p>
+                            <a href="">Link</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="timeline-section">
+                <div class="timeline-date">
+                    Day-4
+                </div>
+                <div class="events-container">
+                    <div class="events-card" style="--clr: #009688">
+                        <div class="img-box">
+                            <img onclick="openModal('img/DSC07750.webp')" src="img/DSC07750.webp">
+                        </div>
+                        <div class="events-content">
+                            <h2>EventName</h2>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Architecto, hic? Magnam eum error saepe doloribus corrupti
+                                repellat quisquam alias doloremque!
+                            </p>
+                            <a href="">Link</a>
+                        </div>
+                    </div>
+                    <div class="events-card" style="--clr: #009688">
+                        <div class="img-box">
+                            <img onclick="openModal('img/DSC07750.webp')" src="img/DSC07750.webp">
+                        </div>
+                        <div class="events-content">
+                            <h2>EventName</h2>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Architecto, hic? Magnam eum error saepe doloribus corrupti
+                                repellat quisquam alias doloremque!
+                            </p>
+                            <a href="">Link</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="timeline-section">
+                <div class="timeline-date">
+                    Day-5
+                </div>
+                <div class="events-container">
+                    <div class="events-card" style="--clr: #009688">
+                        <div class="img-box">
+                            <img onclick="openModal('img/DSC07750.webp')" src="img/DSC07750.webp">
+                        </div>
+                        <div class="events-content">
+                            <h2>EventName</h2>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Architecto, hic? Magnam eum error saepe doloribus corrupti
+                                repellat quisquam alias doloremque!
+                            </p>
+                            <a href="">Link</a>
+                        </div>
+                    </div>
+                    <div class="events-card" style="--clr: #009688">
+                        <div class="img-box">
+                            <img onclick="openModal('img/DSC07750.webp')" src="img/DSC07750.webp">
+                        </div>
+                        <div class="events-content">
+                            <h2>EventName</h2>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Architecto, hic? Magnam eum error saepe doloribus corrupti
+                                repellat quisquam alias doloremque!
+                            </p>
+                            <a href="">Link</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="timeline-section">
+                <div class="timeline-date">
+                    Day-6
+                </div>
+                <div class="events-container">
+                    <div class="events-card" style="--clr: #009688">
+                        <div class="img-box">
+                            <img onclick="openModal('img/DSC07750.webp')" src="img/DSC07750.webp">
+                        </div>
+                        <div class="events-content">
+                            <h2>EventName</h2>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Architecto, hic? Magnam eum error saepe doloribus corrupti
+                                repellat quisquam alias doloremque!
+                            </p>
+                            <a href="">Link</a>
+                        </div>
+                    </div>
+                    <div class="events-card" style="--clr: #009688">
+                        <div class="img-box">
+                            <img onclick="openModal('img/DSC07750.webp')" src="img/DSC07750.webp">
+                        </div>
+                        <div class="events-content">
+                            <h2>EventName</h2>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Architecto, hic? Magnam eum error saepe doloribus corrupti
+                                repellat quisquam alias doloremque!
+                            </p>
+                            <a href="">Link</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="timeline-section" style="margin-bottom: 10rem;">
+                <div class="timeline-date">
+                    Day-7
+                </div>
+                <div class="events-container">
+                    <div class="events-card" style="--clr: #009688">
+                        <div class="img-box">
+                            <img onclick="openModal('img/DSC07750.webp')" src="img/DSC07750.webp">
+                        </div>
+                        <div class="events-content">
+                            <h2>EventName</h2>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Architecto, hic? Magnam eum error saepe doloribus corrupti
+                                repellat quisquam alias doloremque!
+                            </p>
+                            <a href="">Link</a>
+                        </div>
+                    </div>
+                    <div class="events-card" style="--clr: #009688">
+                        <div class="img-box">
+                            <img onclick="openModal('img/DSC07750.webp')" src="img/DSC07750.webp">
+                        </div>
+                        <div class="events-content">
+                            <h2>EventName</h2>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Architecto, hic? Magnam eum error saepe doloribus corrupti
+                                repellat quisquam alias doloremque!
+                            </p>
+                            <a href="">Link</a>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>    
+    </div>
+
+    <script>
+        console.log("Helo events");
+
+        function openModal(imageUrl) {
+            // Open the modal
+            const modal = document.getElementById('modal');
+            const modalImage = document.getElementById('modal-image');
+
+            modalImage.src = imageUrl;
+            modal.style.display = 'block';
+        }
+
+
+        function closeModal() {
+            const modal = document.getElementById('modal');
+            modal.style.display = 'none';
+        }
+    </script>
+    <!-- <script src="js/events.js"></script> -->
+    {{>footer}}
+
+</body>
+
+</html>

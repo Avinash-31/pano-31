@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    {{>header}}
+    <link rel="stylesheet" href="css/comming-soon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/eventdesc.css">
+    <link rel="stylesheet" href="css/sponser.css">
+    <link rel="stylesheet" href="css/heading.css">
+    <style>
+        body {
+            background: linear-gradient(#2596be, #ef7a25);
+        
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    {{>navbar}}
+    <div class="cd-overlay-content">
+        <span></span>
+    </div> <!-- cd-overlay-content -->
+
+    <!-- <a href="#" id="nav-trigger" class="cd-nav-trigger">Menu<span class="cd-icon"></span></a> -->
+    <!-- NavBar -->
+
+    <div class="hero-content background-animation">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 offset-lg-1 col-lg-10">
+                    <div class="entry-header">
+                        <p id="panorama" style="margin-top:-2rem;" class="text-center">Coming Soon...
+                        </p>
+                    </div><!-- .entry-header -->
+                    <div class="countdown flex flex-wrap justify-content-between setdate"
+                        data-date="2023/06/31 23:59:59">
+                        <div class="countdown-holder">
+                            <div class="dday text-center"></div>
+                            <label class="text-center">Days</label>
+                        </div><!-- .countdown-holder -->
+
+                        <div class="countdown-holder">
+                            <div class="dhour text-center"></div>
+                            <label class="text-center">Hours</label>
+                        </div><!-- .countdown-holder -->
+
+                        <div class="countdown-holder">
+                            <div class="dmin text-center"></div>
+                            <label class="text-center">Minutes</label>
+                        </div><!-- .countdown-holder -->
+
+                        <div class="countdown-holder">
+                            <div class="dsec text-center"></div>
+                            <label class="text-center">Seconds</label>
+                        </div><!-- .countdown-holder -->
+                    </div><!-- .countdown -->
+                </div><!-- .col-12 -->
+            </div><!-- row -->
+
+
+        </div><!-- .container -->
+    </div><!-- .hero-content -->
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <script src="js/custom.js"></script>
+    <script src="js/events-desc.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="js/heading.js"></script>
+    <script src="js/navbar.js"></script>
+</body>
+
+</html>

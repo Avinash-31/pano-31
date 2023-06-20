@@ -1,0 +1,32 @@
+{
+  "name": "panorama-23",
+  "version": "1.0.0",
+  "description": "Panaroma - ISTE NIT Durgapur",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon ./app.js -e js/hbs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Avinash-31/PanoRama-23.git"
+  },
+  "author": "Avinash",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Avinash-31/PanoRama-23/issues"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "cookie-session": "^2.0.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "hbs": "^4.2.0",
+    "mongoose": "^7.0.3",
+    "nodemon": "^2.0.22",
+    "passport": "^0.6.0",
+    "passport-google-oauth20": "^2.0.0"
+  },
+  "homepage": "https://github.com/Avinash-31/PanoRama-23#readme"
+}
