@@ -44,8 +44,18 @@ ul{
     max-width: 500px;
     margin: 10px auto;
     padding: 0rem 1rem;
-    line-height: 28px;
+    line-height: 22px;
     font-size: 14px;
+}
+
+@media screen and (min-width: 1024px) and (max-height: 1310px) {
+    .footer-content p{
+        max-width: 500px;
+        margin: 10px auto;
+        padding: 0rem 1rem;
+        line-height: 28px;
+        font-size: 16px;
+    }
 }
 .socials{
     list-style: none;
