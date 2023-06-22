@@ -207,7 +207,7 @@ hr{
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-delay: 1s; */
-    top:-5%;
+    /* top:-3%; */
     background-color: #040d13;
     z-index: 100;
     position: relative;
@@ -251,7 +251,7 @@ h2 {
 .home-events {
     position: relative;
     z-index: 100;
-    top:-17.5%;
+    top:-5%;
     padding: 0rem 1rem;
     background-color: #040d13;
     /* animation-name: bottomFill;

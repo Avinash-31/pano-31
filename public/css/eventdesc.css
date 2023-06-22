@@ -17,7 +17,8 @@
     border: none;
     height: var(--cards-closed-size);
     overflow: hidden;
-    /* border-radius: 1rem; */
+    border-radius: 1rem;
+    border: 1px solid white;
     position: relative;
     z-index: 1;
     transition: all var(--animation-speed-normal) ease-in-out;
