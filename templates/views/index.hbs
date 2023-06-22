@@ -71,22 +71,31 @@
             <div class="container-fluid">
                 <div class="col text-center">
                     <center>
-                        <h1 class="trailertext"></h1>
                     </center>
                     <video width="320" height="240" autoplay muted controls>
                         <source src="vids/logo-reveal.mp4" type="video/mp4">
                     </video>
+                    <p class="fontSize" style="font-size:1rem; padding-top:2.5rem; text-align:justify;">
+                        As the curtain rises and the dust settles, a whisper travels through the air, igniting the
+                        curiosity etched deep within you. In a world where technology intertwines with imagination, a
+                        captivating secret remains to be unraveled.
+                        <br>
+                    </p>
                 </div>
                 <hr>
                 <div class="col">
                     <p class="text-center abouttext">About</p>
 
-                    <p style="font-size:1.15rem; text-align:justify;">
+                    <p class="fontSize" style="font-size:1rem; text-align:justify;">
                         As the curtain rises and the dust settles, a whisper travels through the air, igniting the
                         curiosity etched deep within you. In a world where technology intertwines with imagination, a
                         captivating secret remains to be unraveled.
-                        <br>
-                        <br>
+                        <br><br>
+                        ISTE Students' Chapter NIT Durgapur presents PANORAMA, a journey to embark a chest of beautiful
+                        memories from the 26th of June to the 2nd of July as it makes the adrenaline rush hit to the
+                        deepest of cells in your body.
+
+                        <br><br>
                         Welcome to Panorama, the week-long fest that will reshape your perception of reality and
                         challenge the limits of what's possible.
                         <br>
@@ -104,14 +113,17 @@
             </div>
         </div>
     </section>
-    <!-- <div class="home-events">
+    <div class="home-events">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="entry-title">
                         <p>Panorama '23</p>
                         <p class="insightstext">Insights</p>
+                        Let's get you a sneak peak into the events:
+                        <br><br>
                     </div>
+                    {{>sliderEvents}}
                 </div>
 
             </div>
@@ -119,7 +131,7 @@
         </div>
 
         <p class="sponsertext text-center">Sponsers</p>
-    </div> -->
+    </div>
 
     <!--sponser slider -->
     {{>footer}}

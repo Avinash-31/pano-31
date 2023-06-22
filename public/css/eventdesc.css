@@ -1,97 +1,116 @@
-body {
-    font-family: 'Montserrat', sans-serif;
-    background: #1e293b;
-    color: #f8fafc;
-}
 
-.app {
-    min-width: 100vw;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
 
-header {
+.cards {
+    --cards-text-color: white;
+    --cards-closed-size: 4rem;
+    --animation-speed-normal: .5s;
+    --animation-speed-fast: .25s;
+    
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin: 1rem;
-    text-align: center;
-
-    h1 {
-        font-weight: 600;
-        font-size: 2rem;
-        margin-bottom: 0.5rem;
-
-        @media (min-width: 768px) {
-            font-size: 3rem;
-        }
-    }
-
-    p {
-        color: #94a3b8;
-    }
-}
-
-.tag-list {
-    width: 30rem;
-    max-width: 90vw;
-    display: flex;
-    flex-shrink: 0;
-    flex-direction: column;
-    gap: 1rem 0;
-    position: relative;
-    padding: 1.5rem 0;
+    gap: 1rem;
+    width: 100%;
+  }
+  
+  .card {
+    width: 100%;
+    border: none;
+    height: var(--cards-closed-size);
     overflow: hidden;
-}
-
-.loop-slider {
-    .inner {
-        display: flex;
-        width: fit-content;
-        animation-name: loop;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-        animation-direction: var(--direction);
-        animation-duration: var(--duration);
-    }
-}
-
-.tag {
-    display: flex;
-    align-items: center;
-    gap: 0 0.2rem;
-    color: #e2e8f0;
-    font-size: 0.9rem;
-    background-color: #334155;
-    border-radius: 0.4rem;
-    padding: 0.7rem 1rem;
-    box-shadow:
-        0 0.1rem 0.2rem rgb(0 0 0 / 20%),
-        0 0.1rem 0.5rem rgb(0 0 0 / 30%),
-        0 0.2rem 1.5rem rgb(0 0 0 / 40%);
-
-    span {
-        font-size: 1.2rem;
-        color: #64748b;
-    }
-}
-
-.fade {
-    pointer-events: none;
-    background: linear-gradient(90deg, #1e293b, transparent 30%, transparent 70%, #1e293b);
+    /* border-radius: 1rem; */
+    position: relative;
+    z-index: 1;
+    transition: all var(--animation-speed-normal) ease-in-out;
+    cursor: pointer;
+  }
+  
+  .card[active] {
+    height: 56vw;
+  }
+  
+  .card__image {
     position: absolute;
-    inset: 0;
-}
-
-@keyframes loop {
-    0% {
-        transform: translateX(0);
+    object-fit: default;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    filter: brightness(.675) saturate(75%);
+    transition: filter var(--animation-speed-fast) ease-in-out;
+  }
+  
+  .card:hover .card__image {
+    filter: brightness(.875) saturate(100%);
+  }
+  
+  .card__infos {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    height: var(--cards-closed-size);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: .125rem;
+    width: 100%;
+    padding: .25rem 1rem;
+  }
+  
+  .card__name {
+    margin: 0;
+    color: var(--cards-text-color);
+    transform: translateY(.65rem);
+    transition: all var(--animation-speed-normal) ease-in-out;
+    font-size: 1.5rem;
+  }
+  
+  .card[active] .card__name {
+    transform: translateY(0);
+  }
+  
+  .card__author {
+    margin: 0;
+    color: var(--cards-text-color);
+    text-decoration: none;
+    transform: translateY(.65rem);
+    opacity: 0;
+    transition:
+      opacity var(--animation-speed-fast) ease-in-out,
+      transform var(--animation-speed-normal) ease-in-out;
+  }
+  
+  .card[active] .card__author {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  .card[active] .card__author:hover {
+    opacity: .75;
+  }
+  
+  @media screen and (min-width: 640px) {
+    .cards {
+      max-width: 900px;
+      margin: 0 auto;
+      flex-direction: row;
     }
-
-    100% {
-        transform: translateX(-50%);
+  
+    .card {
+      width: var(--cards-closed-size);
+      height: 20rem;
+      flex: 0 0 var(--cards-closed-size);
     }
-}
+  
+    .card[active] {
+      width: 100%;
+      height: 20rem;
+      flex: 0 0 calc(640px - 19rem);
+    }
+    
+    .card__name {
+      transform: rotate(-90deg) translate(1rem, -2.25rem);
+    }
+  }

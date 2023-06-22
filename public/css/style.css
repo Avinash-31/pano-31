@@ -26,7 +26,7 @@ body {
     font-size: 15px;
     font-weight: normal;
     color: hsl(0, 0%, 90%);
-    background-color: black;
+    background-color: #040d13;
 }
 
 .d-col-n {
@@ -202,11 +202,13 @@ hr{
 ------------------------------------------------------------*/
 
 .about {
-    animation-name: bottomFill;
+    /* animation-name: bottomFill;
     animation-duration: 45s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    animation-delay: 1s;
+    animation-delay: 1s; */
+    top:-17.5%;
+    background-color: #040d13;
     z-index: 100;
     position: relative;
     padding: 2rem 1rem 5rem 1rem;
@@ -249,12 +251,14 @@ h2 {
 .home-events {
     position: relative;
     z-index: 100;
-    padding: 3rem;
-    animation-name: bottomFill;
+    top:-17.5%;
+    padding: 0rem 1rem;
+    background-color: #040d13;
+    /* animation-name: bottomFill;
     animation-duration: 45s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    animation-delay: 1s;
+    animation-delay: 1s; */
 }
 
 .home-events .entry-title p {
@@ -750,4 +754,19 @@ a:hover {
         font-weight: 600;
         color: hsl(0, 0%, 100%);
     }
+
+    .about{
+        top:-13.5%;
+        border-top:1px solid white;
+        border-radius: 0.7rem;
+    }
+
+    .home-events {
+        top:-20%;
+    }
+
+    .fontSize{
+        font-size: 1.15rem !important;
+    }
+
 }

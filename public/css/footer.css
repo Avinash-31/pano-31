@@ -6,12 +6,14 @@
 }
 
 footer{
+    border-top: 1px solid white;
+    border-radius: 0.2rem;
     z-index: 10;
     position: relative;
     bottom: 0;
     left: 0;
     right: 0;
-    background: #11111169;
+    background: #0d141e;
     height: auto;
     width: 100vw;
     font-family: "Open Sans";
@@ -32,6 +34,7 @@ ul{
     padding-inline-start: 0 !important;
 }
 .footer-content h3{
+    color: #ef7a25;
     font-size: 1.8rem;
     font-weight: 400;
     text-transform: capitalize;
@@ -40,6 +43,7 @@ ul{
 .footer-content p{
     max-width: 500px;
     margin: 10px auto;
+    padding: 0rem 1rem;
     line-height: 28px;
     font-size: 14px;
 }

@@ -491,7 +491,7 @@ a {
 #bottom {
   overflow: hidden;
   animation-name: bottomFill;
-  height: 100%;
+  height: 33%;
   position: absolute;
   width: 100%;
   z-index: 5;
@@ -2629,8 +2629,8 @@ a {
 
   #bottom {
     top: 100%;
-    border-top: 1px solid white;
-    border-radius: 1rem;
+    /* border-top: 1px solid white;
+    border-radius: 1rem; */
   }
 
   #panorama {

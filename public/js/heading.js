@@ -76,11 +76,16 @@ const spphrases = [
   "Sponsers",
   "Sponsers",
 ];
+const ftphrases = [
+  "Panorama",
+  "Panorama'23",
+];
 
 const el = document.querySelector(".abouttext");
 const tt = document.querySelector(".trailertext");
 const inel = document.querySelector(".insightstext");
 const spel = document.querySelector(".sponsertext");
+const ftel = document.querySelector(".footer-text");
 
 
 const fx = new TextScramble(el);
@@ -88,7 +93,7 @@ const fx = new TextScramble(el);
 let counter = 0;
 const next = () => {
   fx.setText(phrases[counter]).then(() => {
-    setTimeout(next, 4000);
+    setTimeout(next, 3250);
   });
   counter = (counter + 15) % phrases.length;
 };
@@ -106,14 +111,13 @@ const ttnext = () => {
   ttcounter = (ttcounter + 15) % ttphrases.length;
 };
 
-ttnext();
 
 const infx = new TextScramble(inel);
 
 let incounter = 0;
 const innext = () => {
   infx.setText(inphrases[incounter]).then(() => {
-    setTimeout(innext, 4000);
+    setTimeout(innext, 5000);
   });
   incounter = (incounter + 15) % inphrases.length;
 };
@@ -126,9 +130,21 @@ const spfx = new TextScramble(spel);
 let spcounter = 0;
 const spnext = () => {
   spfx.setText(spphrases[spcounter]).then(() => {
-    setTimeout(spnext, 4000);
+    setTimeout(spnext, 3000);
   });
   spcounter = (spcounter + 15) % spphrases.length;
 };
 
 spnext();
+
+const ftfx = new TextScramble(ftel);
+
+let ftcounter = 0;
+const ftnext = () => {
+  ftfx.setText(ftphrases[ftcounter]).then(() => {
+    setTimeout(ftnext, 3000);
+  });
+  ftcounter = (ftcounter + 15) % ftphrases.length;
+};
+
+ftnext();
