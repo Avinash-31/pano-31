@@ -23,6 +23,15 @@
   font-family: bartkey;
 }
 
+.eventtext {
+  width: 100%;
+  font-size: 3rem;
+  margin-top: 5rem;
+  color: #ef7a25;
+  text-shadow: .1em .1em 0 hsl(0, 0%, 0%);
+  font-family: bartkey;
+}
+
 .insightstext {
   font-size: 3rem !important;
   mix-blend-mode: exclusion;
@@ -37,7 +46,7 @@
 }
 
 .dud {
-  color: #7ebdf3;
+  color: #f4f7fa;
 }
 
 
@@ -46,6 +55,10 @@
     font-size: 5rem;
     /* background-color: red; */
     mix-blend-mode: exclusion;
+  }
+  .eventtext {
+    font-size: 5rem;
+    /* background-color: red; */
   }
 
   .trailertext{
@@ -71,6 +84,10 @@
     /* background-color: red; */
     mix-blend-mode: exclusion;
   }
+  .eventtext {
+    font-size: 5rem;
+    /* background-color: red; */
+  }
 
   .trailertext{
     font-size: 5rem;
@@ -94,6 +111,9 @@
     font-size: 5rem;
     /* background-color: red; */
     mix-blend-mode: exclusion;
+  }
+  .eventtext {
+    font-size: 5rem;
   }
 
   .trailertext{
@@ -119,6 +139,9 @@
     font-size: 5rem;
     /* background-color: red; */
     mix-blend-mode: exclusion;
+  }
+  .eventtext {
+    font-size: 5rem;
   }
 
   .trailertext{
@@ -144,6 +167,9 @@
     /* background-color: red; */
     mix-blend-mode: exclusion;
   }
+  .eventtext {
+    font-size: 5rem;
+  }
 
   .trailertext{
     font-size: 5rem;
@@ -169,6 +195,9 @@
     font-size: 5rem;
     /* background-color: red; */
     mix-blend-mode: exclusion;
+  }
+  .eventtext {
+    font-size: 5rem;
   }
 
   .trailertext{
@@ -196,6 +225,9 @@
     /* background-color: red; */
     mix-blend-mode: exclusion;
   }
+  .eventtext {
+    font-size: 5rem;
+  }
 
   .trailertext{
     font-size: 5rem;
@@ -221,6 +253,9 @@
     font-size: 5rem;
     /* background-color: red; */
     mix-blend-mode: exclusion;
+  }
+  .eventtext {
+    font-size: 5rem;
   }
 
   .trailertext{
@@ -247,6 +282,9 @@
     font-size: 5rem;
     /* background-color: red; */
     mix-blend-mode: exclusion;
+  }
+  .eventtext {
+    font-size: 5rem;
   }
 
   .trailertext{

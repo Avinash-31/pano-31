@@ -56,16 +56,23 @@ app.get('/', (req, res) => {
 
 //events page
 app.get('/events',(req,res)=>{
-    res.render("comming-soon")
+    res.render("events")
 })
 
 //timeline page
 app.get('/timeline',(req,res)=>{
-    res.render("comming-soon")
+    res.render("timeline")
 })
 
 app.get('/demo',(req,res)=>{
     res.render("demo")
+})
+
+app.get('/eventsTest',(req,res)=>{
+    res.render("events")
+})
+app.get('/timelineTest',(req,res)=>{
+    res.render("timeline")
 })
 
 

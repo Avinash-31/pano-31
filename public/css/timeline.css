@@ -1,14 +1,21 @@
+@font-face {
+  font-family: "bartkey";
+  src: url(../fonts/BARTKEY.ttf);
+  src: url(../fonts/BARTKEY.otf);
+  font-weight: 100;
+}
+
 .page-section {
   color: orange;
 }
 
-.dayText{
+.dayText {
   display: grid;
   height: 100%;
-  font-size: 1.3rem;
+  font-size: 1rem;
   align-items: center;
   justify-content: center;
-  mix-blend-mode:difference;
+  mix-blend-mode: difference;
 }
 
 body {
@@ -54,6 +61,7 @@ body {
 .timeline>li .timeline-panel {
   position: relative;
   float: right;
+  top: -0.5rem;
   width: 75%;
   /* padding: 0 20px 0 100px; */
   text-align: left;
@@ -137,13 +145,14 @@ a:hover {
 .timeline .timeline-heading .h4 {
   margin-top: 0;
   color: inherit;
+  font-family: bartkey;
   background-color: #0404046a;
-  padding:1rem;
+  padding: 1rem;
   border-radius: 2rem;
   display: inline-flex;
 }
 
-hr{
+hr {
   background-color: rgba(225, 213, 213, 0.815);
 }
 
@@ -152,8 +161,9 @@ hr{
   text-transform: none;
 }
 
-.date{
-  color: rgba(255, 255, 255, 0.64);
+.date {
+  /* color: rgba(255, 255, 255, 0.64); */
+  color: white;
 }
 
 .timeline .timeline-body>ul,
@@ -182,7 +192,7 @@ hr{
     text-align: right;
   }
 
-  .dayText{
+  .dayText {
     font-size: 1.7rem;
   }
 
@@ -261,9 +271,24 @@ hr{
 
 .page-section h2.section-heading,
 .page-section .section-heading.h2 {
-  font-size: 2.5rem;
+  font-size: 5rem !important;
   margin-top: 0;
+  text-shadow: .1em .1em 0 hsl(0, 0%, 0%);
+  font-family: bartkey;
   margin-bottom: 1rem;
+}
+
+@media (max-width: 992px) {
+
+  .page-section h2.section-heading,
+  .page-section .section-heading.h2 {
+    font-size: 3rem !important;
+  }
+
+  body {
+    background: linear-gradient(-25deg, #2596be, #ef7a25, #040404, #2596be,#ef7a25,#040404);
+    background-size: 150% 150%;
+  }
 }
 
 .page-section h3.section-subheading,
@@ -307,7 +332,7 @@ hr{
 
 .text-muted {
   --bs-text-opacity: 1;
-  color: #6c757d !important;
+  color: #ccd6de !important;
 }
 
 p {

@@ -80,12 +80,22 @@ const ftphrases = [
   "Panorama",
   "Panorama'23",
 ];
+const evphrases = [
+  "Events",
+  "Events",
+];
+const shphrases = [
+  "Events",
+  "Events",
+];
 
 const el = document.querySelector(".abouttext");
 const tt = document.querySelector(".trailertext");
 const inel = document.querySelector(".insightstext");
 const spel = document.querySelector(".sponsertext");
 const ftel = document.querySelector(".footer-text");
+const evel = document.querySelector(".eventtext");
+const shel = document.querySelector(".section-heading");
 
 
 const fx = new TextScramble(el);
@@ -148,3 +158,16 @@ const ftnext = () => {
 };
 
 ftnext();
+
+const evfx = new TextScramble(evel);
+
+let evcounter = 0;
+const evnext = () => {
+  evfx.setText(evphrases[evcounter]).then(() => {
+    setTimeout(evnext, 3000);
+  });
+  evcounter = (evcounter + 15) % evphrases.length;
+};
+
+evnext();
+

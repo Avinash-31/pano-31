@@ -6,7 +6,7 @@
 }
 
 a:hover {
-	text-decoration: none;
+	text-decoration: none !important;
 	color: #ef7a25 !important;
 	/* Inherit the color from the parent element */
 	cursor: pointer;
@@ -25,7 +25,7 @@ a:hover {
 	position: relative;
 	display: grid;
 	top:5%;
-	font-family: bartkey;
+	font-family: bartkey !important;
 }
 
 
@@ -60,6 +60,7 @@ a:hover {
 	right: 5%;
 	width: 30px;
 	height: 20px;
+	font-family: bartkey !important;
 }
 
 body::-webkit-scrollbar {
