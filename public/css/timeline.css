@@ -60,8 +60,8 @@ body {
 .timeline>li .timeline-panel {
   position: relative;
   float: right;
-  top: -0.5rem;
   width: 75%;
+  top:1.5rem;
   /* padding: 0 20px 0 100px; */
   text-align: left;
   /* background-color: rgba(0, 0, 0, 0.299); */
