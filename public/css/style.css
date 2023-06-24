@@ -148,6 +148,7 @@ hr{
 ------------------------------------------------------------*/
 .countdown {
     margin-top: 160px;
+    margin-bottom: -10rem;
 }
 
 .countdown-holder {
@@ -207,7 +208,7 @@ hr{
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-delay: 1s; */
-    top:-20%;
+    /* top:-10%; */
     background-color: #040d13;
     z-index: 100;
     position: relative;
@@ -743,6 +744,9 @@ a:hover {
         line-height: 1;
         color: hsl(0, 0%, 100%);
     }
+    .countdown {
+        margin-bottom: 0rem;
+    }
 
     .setdate {
         letter-spacing: 0.6rem;
@@ -756,7 +760,7 @@ a:hover {
     }
 
     .about{
-        top:-13.5%;
+        top:-21%;
         border-top:1px solid white;
         border-radius: 0.7rem;
     }
