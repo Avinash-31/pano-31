@@ -147,8 +147,7 @@ hr{
 ## countdown
 ------------------------------------------------------------*/
 .countdown {
-    margin-top: 160px;
-    margin-bottom: -10rem;
+    margin-top: 100px;
 }
 
 .countdown-holder {
@@ -208,7 +207,7 @@ hr{
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-delay: 1s; */
-    /* top:-10%; */
+    top:-14%;
     background-color: #040d13;
     z-index: 100;
     position: relative;
@@ -252,7 +251,7 @@ h2 {
 .home-events {
     position: relative;
     z-index: 100;
-    top:-5%;
+    top:-12.5%;
     padding: 0rem 1rem;
     background-color: #040d13;
     /* animation-name: bottomFill;
@@ -744,8 +743,9 @@ a:hover {
         line-height: 1;
         color: hsl(0, 0%, 100%);
     }
-    .countdown {
-        margin-bottom: 0rem;
+
+    .about{
+        top:-3%;
     }
 
     .setdate {
@@ -760,7 +760,7 @@ a:hover {
     }
 
     .about{
-        top:-21%;
+        top:-13.5%;
         border-top:1px solid white;
         border-radius: 0.7rem;
     }
