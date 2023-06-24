@@ -207,7 +207,7 @@ hr{
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-delay: 1s; */
-    top:-33%;
+    top:-25%;
     background-color: #040d13;
     z-index: 100;
     position: relative;
