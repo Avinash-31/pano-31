@@ -2,6 +2,11 @@
 
 /* Global Styles
   ---------------------------------------------- */
+
+:root {
+  color-scheme: only light;
+}
+
 html {
   font-family: 'Open Sans', sans-serif;
   background: #0D133A;

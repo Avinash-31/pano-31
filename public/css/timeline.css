@@ -5,6 +5,10 @@
   font-weight: 100;
 }
 
+:root {
+  color-scheme: only light;
+}
+
 .page-section {
   color: orange;
 }

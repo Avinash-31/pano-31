@@ -1,4 +1,6 @@
-
+:root {
+  color-scheme: only light;
+}
 
 .cards {
     --cards-text-color: white;

@@ -1,7 +1,9 @@
 /*------------------------------------------------------------
 # Global classes
 ------------------------------------------------------------*/
-
+:root {
+    color-scheme: only light;
+  }
 @font-face {
     font-family: "bartkey";
     src: url(../fonts/BARTKEY.ttf);

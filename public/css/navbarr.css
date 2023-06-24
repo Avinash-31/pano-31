@@ -5,6 +5,10 @@
     font-weight: 400;
 }
 
+:root {
+	color-scheme: only light;
+  }
+
 a:hover {
 	text-decoration: none !important;
 	color: #ef7a25 !important;

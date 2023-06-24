@@ -5,6 +5,10 @@
     font-weight: 100;
 }
 
+:root {
+    color-scheme: only light;
+  }
+
 footer {
     border-top: 1px solid white;
     border-radius: 0.2rem;
