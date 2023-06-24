@@ -19,7 +19,8 @@
 .abouttext {
   font-size: 3rem;
   /* background-color: red; */
-  mix-blend-mode: exclusion;
+  /* mix-blend-mode: exclusion; */
+  color: #ef7a25;
   font-family: bartkey;
 }
 

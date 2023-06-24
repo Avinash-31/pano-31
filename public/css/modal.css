@@ -31,7 +31,8 @@ p {
   display: flex;
   flex-direction: column;
   /* background: #fff; */
-  backdrop-filter: blur(50px);
+  backdrop-filter: blur(100px);
+  -webkit-backdrop-filter: blur(100px);
   gap: 3px;
   color: white;
   position: fixed;
