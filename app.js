@@ -68,6 +68,10 @@ app.get('/demo',(req,res)=>{
     res.render("demo")
 })
 
+app.get('*',(req,res)=>{
+    res.render("notfound")
+})
+
 app.get('/eventsTest',(req,res)=>{
     res.render("events")
 })
