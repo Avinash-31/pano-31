@@ -4,6 +4,14 @@
 :root {
     color-scheme: only light;
   }
+
+.liveNow{
+    position: relative;
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3rem;
+}
 @font-face {
     font-family: "bartkey";
     src: url(../fonts/BARTKEY.ttf);
